@@ -6,7 +6,7 @@
 
  ;(function ( $, window, undefined ) {
 	"use strict";
-	
+
 	var document = window.document,
 	defaults = {
 		styled: true,
@@ -69,7 +69,7 @@
 				scrollwheel: this.options.scrollwheel,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
-			
+
 		this.map = new google.maps.Map(this.elem, mapOptions);
 		this.map.setOptions({styles: mapStyles});
 	};
