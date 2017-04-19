@@ -11,7 +11,6 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $name     = $_POST['name'];
 $email    = $_POST['email'];
-$title    = $_POST['title'];
 $content = $_POST['content'];
 
 if(trim($name) == '') {
@@ -44,7 +43,7 @@ if(get_magic_quotes_gpc()) {
 // Enter the email address that you want to emails to be sent to.
 // Example $address = "joe.doe@yourdomain.com";
 
-$address = "example@example.com";
+$address = "jedward3@gmail.com";
 
 
 // Configuration option.
@@ -77,7 +76,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Email has sent successfully, echo a success page.
 
-	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+	echo "<p>Thank you <strong>$name</strong>, I'll respond to you as soon as I can!.</p>";
 
 } else {
 
