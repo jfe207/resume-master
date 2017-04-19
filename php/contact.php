@@ -24,10 +24,6 @@ if(trim($name) == '') {
 	exit();
 }
 
-if(trim($title) == '') {
-	echo '<p class="error">Please enter a title.</p>';
-	exit();
-}
 
 if(trim($content) == '') {
 	echo '<p class="error">Please enter your message.</p>';
